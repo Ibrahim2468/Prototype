@@ -1,0 +1,29 @@
+{
+  "name": "prototype",
+  "version": "1.0.0",
+  "description": "Proototype du E-lybrary\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[i\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C de IADL\u001b[D\u001b[D\u001b[D\u001b[Dl'intsitut \u001b[2~dd\u001b[D\u001b[2~df ddf\u001b[B\u001b[BdIADL",
+  "main": "server.js",
+  "scripts": {
+    "start": "supervisor server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ibrahim2468/Prototype.git"
+  },
+  "author": "Thomas Djina\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[CIbrahima Thomas Djina, layely, Moussa Tine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ibrahim2468/Prototype/issues"
+  },
+  "homepage": "https://github.com/Ibrahim2468/Prototype#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.18"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0"
+  }
+}
