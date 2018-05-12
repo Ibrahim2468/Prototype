@@ -1,5 +1,5 @@
 "use strict";
 
 exports.getHomePage = function (req, res) {
-    res.render('index.ejs', {cardNumber: 15});
+    res.render('index.ejs', {cardNumber: 6});
 };

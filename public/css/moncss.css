@@ -8,6 +8,17 @@
 }
 
 .bodyAcceuil{
-	background-image : url("../images/connexion/bg1.jpg");
-	background-size: 100%;
+/*	background-image : url("../images/connexion/bg1.jpg");
+	background-size: 100%;*/
+}
+
+.textTitreBanierre{
+	font-size: 30px;
+}
+
+.divRecherche{
+	background-color: #0F405E !important;
+	height: 100px;
+	vertical-align: center !important;
+
 }
