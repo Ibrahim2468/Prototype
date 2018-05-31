@@ -4,6 +4,7 @@
 	<title>Acceuil</title>
 	<meta charset="UTF-8" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 	<link rel="stylesheet" href="css/moncss.css" />
 </head>
 <body>
@@ -11,37 +12,47 @@
 
 	<%- include('./includes/recherche'); %>
 
-	<div class="nouveautes">
+	<div class="categories">
 		<div class="alert-dark titreBanierre">
-			<span class="textTitreBanierre">Nouveautés</span>
-			<a href="/categories?cat=Nouveautés" class="btn btn-info btn-lg float-right plusTitrebaniere">
+			<span class="textTitreBanierre"><%= titre %></span>
+			<!--a href="#" class="btn btn-info btn-lg float-right plusTitrebaniere">
 				Plus
-			</a>
+			</a-->
+		</div>
+		<div class="trie">
+			<span class="spanTrie">
+				Trier par : 
+				<a class="typeTrie" href="#">Titre</a> |
+				<a class="typeTrie" href="#">Auteur</a> | 
+				<a class="typeTrie" href="#">Année de publication</a> | 
+				<a class="typeTrie" href="#">Editeur</a> 
+			</span>
 		</div>
 		<div class="livres">
 			<% for(let i=0; i < cardNumber; i++) { %>
 				<div class="livre">
-					<a href="#">
+					<div class="imageLivre">
 						<img class="responsive-img" src="images/livres/1.png" alt="Card image cap" height="250" width="200">
-					</a>
-				</div>
-			<% } %>
-		</div>
-	</div>
-
-	<div class="plusLus">
-		<div class="alert-dark titreBanierre">
-			<span class="textTitreBanierre">Les plus lus</span>
-			<a href="/categories?cat=Les plus lus" class="btn btn-info btn-lg float-right plusTitrebaniere">
-				Plus
-			</a>
-		</div>
-		<div class="livres">
-			<% for(let i=0; i < cardNumber; i++) { %>
-				<div class="livre">
-					<a href="#">
-						<img class="responsive-img" src="images/livres/1.png" alt="Card image cap" height="250" width="200">
-					</a>
+					</div>
+					<div class="detailsLivre">
+						<span>Titre : </span>
+						<span>Auteur : </span>
+						<span>Editeur : </span>
+						<span>Date publication : </span>
+						<div class="possibiliteLivre">
+							<span class="dot">
+								<a href="#" title="Lire le livre">
+									<i class="large material-icons">local_library</i>
+								</a>
+							</span>
+							<span class="dot">
+								<a href="#" title="Fiche du livre">
+									<i class="large material-icons">remove_red_eye</i>
+								</a>
+							</span>
+						</div>
+						
+					</div>
 				</div>
 			<% } %>
 		</div>

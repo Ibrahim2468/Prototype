@@ -5,7 +5,8 @@ module.exports = function (app) {
     // Liste des routers
     const routers = [
         "LoginRouter",
-        "HomeRouter"
+        "HomeRouter",
+        "CategoriesRouter"
     ]; 
 
     for (let router of routers) {

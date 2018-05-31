@@ -1,24 +1,117 @@
-.monFormulaire{
-	background-image : url("../images/connexion/bg1.jpg");
-	background-size: 100%;
+/* Material icons */
+.material-icons.tiny { font-size: 18px; }
+.material-icons.small { font-size: 24px; } /* Default */
+.material-icons.medium { font-size: 36px; }
+.material-icons.large { font-size: 48px; }
+.dot {
+	display: flex;
+	height: 70px;
+	width: 70px;
+	background-color: #bbb;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px; 
 }
 
-.white-text{
-	color: white;
+a, a:hover{
+	text-decoration: none;
+	color: black;
 }
 
-.bodyAcceuil{
-/*	background-image : url("../images/connexion/bg1.jpg");
-	background-size: 100%;*/
+/* Les includes */
+
+.bareRecherche{
+	display: flex;
+	width: 100%;
+	margin: 15px 0px 15px 0px;
+	background-color: #0F405E;
+	align-items: center;
+	justify-content: center;
 }
 
-.textTitreBanierre{
+.formRecherche{
+	display: flex;
+	margin: 15px 0px 15px 0px;
+}
+
+/* La page d'acceuil */
+
+.nouveautes{
+	
+}
+
+.plusLus{
+	
+}
+
+.nouveautes > .titreBanierre, .plusLus > .titreBanierre, .categories > .titreBanierre{
+	display: flex;
+	width: 100%;
+	padding: 15px 0px 15px 0px;
+	margin: 15px 0px 15px 0px;
+	align-items: center;
+	justify-content: center;
+}
+
+.titreBanierre > .textTitreBanierre{
+	display: flex;
 	font-size: 30px;
 }
 
-.divRecherche{
-	background-color: #0F405E !important;
-	height: 100px;
-	vertical-align: center !important;
+.titreBanierre > .plusTitrebaniere{
+	display: flex;
+	position: absolute;
+	right: 0%;
+}
 
+.nouveautes > .livres, .plusLus > .livres{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+/* Les pages avec catégorie */
+
+.categories{
+
+}
+
+.categories > .trie{
+	display: flex;
+	background-color: red;
+	width: 100%;
+	padding: 15px 0px 15px 0px;
+	margin: 15px 0px 15px 0px;
+}
+
+.spanTrie > .typeTrie{
+	text-decoration: none;
+	color: black;
+}
+
+.categories > .livres{
+	display: flex;
+	flex-direction: column;
+}
+
+.livres > .livre {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.livre > .imageLivre{
+	display: flex;
+	margin-right: 50px;
+}
+
+.livre > .detailsLivre{
+	display: flex;
+	flex-direction: column;
+}
+
+.detailsLivre > .possibiliteLivre{
+	display: flex;
+	margin-top: 20px;
+	justify-content: space-around;
 }
