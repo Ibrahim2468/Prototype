@@ -19,7 +19,7 @@
 				Plus
 			</a-->
 		</div>
-		<div class="trie">
+		<!--div class="trie">
 			<span class="spanTrie">
 				Trier par : 
 				<a class="typeTrie" href="#">Titre</a> |
@@ -27,7 +27,7 @@
 				<a class="typeTrie" href="#">Année de publication</a> | 
 				<a class="typeTrie" href="#">Editeur</a> 
 			</span>
-		</div>
+		</div-->
 		<div class="livres">
 			<% for(let i=0; i < cardNumber; i++) { %>
 				<div class="livre">
@@ -41,12 +41,12 @@
 						<span>Date publication : </span>
 						<div class="possibiliteLivre">
 							<span class="dot">
-								<a href="#" title="Lire le livre">
+								<a href="livres/pdf.pdf" title="Lire le livre">
 									<i class="large material-icons">local_library</i>
 								</a>
 							</span>
 							<span class="dot">
-								<a href="#" title="Fiche du livre">
+								<a href="/livre?livre=nomLivre" title="Fiche du livre">
 									<i class="large material-icons">remove_red_eye</i>
 								</a>
 							</span>

@@ -6,3 +6,10 @@ exports.getCategoriePage = function (req, res) {
 
     res.render('categories.ejs', {titre: categorie, cardNumber: 6, });
 };
+
+exports.getLivrePage = function (req, res) {
+	var livre =  url.parse(req.url, true).query.livre;
+
+    res.render('livre.ejs', {titre: livre, cardNumber: 1, });
+};
+

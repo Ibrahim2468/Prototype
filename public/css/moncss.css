@@ -1,3 +1,12 @@
+/* Navbar */
+
+.catalogue{
+	display: flex;
+	margin-right: 10px; 
+}
+
+
+
 /* Material icons */
 .material-icons.tiny { font-size: 18px; }
 .material-icons.small { font-size: 24px; } /* Default */
@@ -115,3 +124,44 @@ a, a:hover{
 	margin-top: 20px;
 	justify-content: space-around;
 }
+
+
+/* Les pages avec livre */
+
+.livreLivre{
+
+}
+
+.livreDescription{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.livreDescription > .livreDetailsLivre{
+	display: flex;
+	flex-direction: column;
+	margin-left: 15px; 	
+}
+
+.livreDetailsLivre > .livreLireLivre{
+	display: flex;
+	margin-top: 20px;
+}
+
+.livresTous > .descriptionLivre{
+	display: flex;
+	text-align: justify;
+	margin: 10px;
+}
+
+.textTitreBanierreLivre{
+	display: flex;
+	width: 100%;
+	padding: 15px 0px 15px 0px;
+	margin: 15px 0px 15px 0px;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+}
+

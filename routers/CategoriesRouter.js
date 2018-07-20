@@ -5,4 +5,7 @@ module.exports = function (app) {
 
     app.route('/categories')
         .get(CategoriesController.getCategoriePage);
+
+    app.route('/livre')
+        .get(CategoriesController.getLivrePage);
 };

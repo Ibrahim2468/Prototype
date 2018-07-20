@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Acceuil</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link rel="stylesheet" href="css/moncss.css" />
+</head>
+<body>
+	<%- include('./includes/nav'); %>
+
+	<%- include('./includes/recherche'); %>
+
+	<div class="livreTous">
+		<div class="alert-dark titreBanierreLivre">
+			<span class="textTitreBanierreLivre"><%= titre %></span>
+			<!--a href="#" class="btn btn-info btn-lg float-right plusTitrebaniere">
+				Plus
+			</a-->
+		</div>
+		
+		<div class="livresTous">
+			<% for(let i=0; i < cardNumber; i++) { %>
+				<div class="livreDescription">
+					<div class="livreImageLivre">
+						<img class="responsive-img" src="images/livres/1.png" alt="Card image cap" height="250" width="200">
+					</div>
+					<div class="livreDetailsLivre">
+						<span>Titre : dfhiducdg	</span>
+						<span>Auteur : dcgfvdcdy </span>
+						<span>Editeur : dcgfvdcdyedue</span>
+						<span>Date publication : 12/01/1965</span>
+						<div class="livreLireLivre">
+							<span class="dot">
+								<a href="livres/pdf.pdf" title="Lire le livre">
+									<i class="large material-icons">local_library</i>
+								</a>
+							</span>
+						</div>
+						
+					</div>
+				</div>
+					<div class="descriptionLivre">
+						<p>A perfect guide to speed up the predicting power of machine learning algorithms
+About This Book
+
+    Design, discover, and create dynamic, efficient features for your machine learning application
+    Understand your data in-depth and derive astonishing data insights with the help of this Guide
+    Grasp powerful feature-engineering techniques and build machine learning systems
+
+Who This Book Is For
+
+If you are a data science professional or a machine learning engineer looking to strengthen your predictive analytics model, then this book is a perfect guide for you. Some basic understanding of the machine learning concepts and Python scripting would be enough to get started with this book.
+What You Will Learn
+
+    Identify and leverage different feature types
+    Clean features in data to improve predictive power
+    Understand why and how to perform feature selection, and model error analysis
+    Leverage domain knowledge to construct new features
+    Deliver features based on mathematical insights
+    Use machine-learning algorithms to construct features
+    Master feature engineering and optimization
+    Harness feature engineering for real world applications through a structured case study
+
+In Detail
+
+Feature engineering is the most important step in creating powerful machine learning systems. This book will take you through the entire feature-engineering journey to make your machine learning much more systematic and effective.
+
+You will start with understanding your data—often the success of your ML models depends on how you leverage different feature types, such as continuous, categorical, and more, You will learn when to include a feature, when to omit it, and why, all by understanding error analysis and the acceptability of your models. You will learn to convert a problem statement into useful new features. You will learn to deliver features driven by business needs as well as mathematical insights. You'll also learn how to use machine learning on your machines, automatically learning amazing features for your data.
+
+By the end of the book, you will become proficient in Feature Selection, Feature Learning, and Feature Optimization.
+Style and approach
+
+This step-by-step guide with use cases, examples, and illustrations will help you master the concepts of feature engineering.
+
+Along with explaining the fundamentals, the book will also introduce you to slightly advanced concepts later on and will help you implement these techniques in the real world.</p>
+					</div>
+			<% } %>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
