@@ -107,6 +107,7 @@ a, a:hover{
 .livres > .livre {
 	display: flex;
 	margin-bottom: 20px;
+	margin-left: 40px;
 }
 
 .livre > .imageLivre{
